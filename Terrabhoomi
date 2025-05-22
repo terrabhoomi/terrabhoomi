@@ -1,5 +1,345 @@
 <!DOCTYPE html>
-<html>
-<head><title>Test</title></head>
-<body><h1>Terra Bhoomi</h1></body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terra Bhoomi - Real Estate & Construction Consultancy</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#C5A572',secondary:'#2F5233'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Poppins', sans-serif;
+overflow-x: hidden;
+}
+.nav-bar {
+position: fixed;
+width: 100%;
+top: 0px;
+z-index: 50;
+}
+.tab-bar {
+position: fixed;
+width: 100%;
+bottom: 0px;
+z-index: 50;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=modern%20architecture%20building%20with%20hills%20and%20nature%20in%20background%2C%20professional%20real%20estate%20photography%2C%20high%20quality%2C%20clean%20composition%2C%20soft%20lighting%2C%20architectural%20photography&width=375&height=400&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.service-card {
+transition: all 0.3s ease;
+}
+.service-card:hover {
+transform: translateY(-5px);
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Nav Bar -->
+<nav class="nav-bar bg-white shadow-md">
+<div class="flex justify-between items-center px-4 py-3">
+<div class="text-primary font-bold text-xl" style="font-family: 'Poppins', sans-serif;">Terra Bhoomi</div>
+<div class="w-8 h-8 flex items-center justify-center cursor-pointer">
+<i class="ri-menu-line ri-lg text-primary"></i>
+</div>
+</div>
+</nav>
+<!-- Main Content with proper padding for nav and tab bars -->
+<main class="pt-16 pb-20">
+<!-- Hero Section -->
+<section class="hero-section relative h-[400px] w-full">
+<div class="absolute inset-0 bg-black bg-opacity-40"></div>
+<div class="absolute inset-0 flex flex-col justify-center px-6 text-white">
+<h1 class="text-3xl font-semibold mb-2">Build with Vision. Grow with Terra Bhoomi.</h1>
+<p class="text-sm mb-6">Digital Real Estate & Construction Consultancy</p>
+<button class="bg-primary text-white px-6 py-3 rounded-button font-medium w-fit cursor-pointer">
+Explore with Us
+</button>
+</div>
+</section>
+<!-- 3D Intro Video Section -->
+<section class="px-6 py-8 bg-black">
+<div class="relative w-full rounded-lg overflow-hidden shadow-2xl" style="padding-top: 56.25%;">
+<video class="absolute inset-0 w-full h-full object-cover" autoplay loop muted playsinline>
+<source src="https://readdy.ai/api/search-video?query=modern real estate development and construction consultancy, 3D architectural visualization, professional corporate intro, digital services, online platform, high quality animation&seq=1" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white">
+<h3 class="text-lg font-semibold mb-1">Digital Excellence</h3>
+<p class="text-sm opacity-90">Your Online Real Estate Partner</p>
+</div>
+</div>
+<div class="mt-6 text-center">
+<p class="text-sm text-gray-300 max-w-md mx-auto">Experience the future of real estate consultancy with our digital-first approach, connecting you to premium properties and construction solutions.</p>
+</div>
+</section>
+<!-- About Section -->
+<section class="px-6 py-8 bg-gray-50">
+<h2 class="text-2xl font-semibold text-gray-800 mb-4">About Us</h2>
+<div class="w-16 h-1 bg-primary mb-6"></div>
+<p class="text-gray-700 mb-4">
+Terra Bhoomi is a digital-first real estate and construction consultancy platform. We leverage technology to provide seamless online solutions for property buying, construction planning, and project development across Kerala.
+</p>
+<p class="text-gray-700 mb-4">
+With a focus on quality, trust, and innovation, we help individuals and investors build their dreams — from the ground up.
+</p>
+<p class="text-gray-700">
+Our mission is to deliver reliable, customized, and visionary property solutions that go beyond transactions — we shape spaces with purpose. Let's build something meaningful, together.
+</p>
+</section>
+<!-- Services Section -->
+<section class="px-6 py-8">
+<h2 class="text-2xl font-semibold text-gray-800 mb-4">Our Services</h2>
+<div class="w-16 h-1 bg-primary mb-6"></div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Service 1 -->
+<div class="service-card bg-white shadow-md rounded p-4 border-t-2 border-primary">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-3">
+<i class="ri-building-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-sm font-medium mb-2">Real Estate Consultation</h3>
+<p class="text-xs text-gray-600">Verified plots, residential lands, villas, and commercial properties</p>
+</div>
+<!-- Service 2 -->
+<div class="service-card bg-white shadow-md rounded p-4 border-t-2 border-primary">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-3">
+<i class="ri-hammer-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-sm font-medium mb-2">Construction & Builder</h3>
+<p class="text-xs text-gray-600">Budget-aligned builder pairing for homes and villas</p>
+</div>
+<!-- Service 3 -->
+<div class="service-card bg-white shadow-md rounded p-4 border-t-2 border-primary">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-3">
+<i class="ri-paint-brush-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-sm font-medium mb-2">Interior Works</h3>
+<p class="text-xs text-gray-600">Painting, tiling, lighting, furnishing, and complete interiors</p>
+</div>
+<!-- Service 4 -->
+<div class="service-card bg-white shadow-md rounded p-4 border-t-2 border-primary">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-3">
+<i class="ri-building-4-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-sm font-medium mb-2">Project Development</h3>
+<p class="text-xs text-gray-600">End-to-end support for homes, rentals, and commercial spaces</p>
+</div>
+<!-- Service 5 -->
+<div class="service-card bg-white shadow-md rounded p-4 border-t-2 border-primary">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-3">
+<i class="ri-map-pin-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-sm font-medium mb-2">Planning & Area Study</h3>
+<p class="text-xs text-gray-600">Feasibility study, ROI estimation, and market insights</p>
+</div>
+<!-- Service 6 -->
+<div class="service-card bg-white shadow-md rounded p-4 border-t-2 border-primary">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-3">
+<i class="ri-building-2-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-sm font-medium mb-2">Temporary Structures</h3>
+<p class="text-xs text-gray-600">Design and setup of cinema sets and event buildings</p>
+</div>
+<!-- Service 7 -->
+<div class="service-card bg-white shadow-md rounded p-4 border-t-2 border-primary col-span-2">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-3">
+<i class="ri-tools-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-sm font-medium mb-2">Project Assistance</h3>
+<p class="text-xs text-gray-600">Comprehensive support from project inception to completion, including planning, execution, and delivery</p>
+</div>
+</div>
+</section>
+<!-- Featured Projects -->
+<section class="px-6 py-8 bg-gray-50">
+<h2 class="text-2xl font-semibold text-gray-800 mb-4">Featured Projects</h2>
+<div class="w-16 h-1 bg-primary mb-6"></div>
+<div class="space-y-4">
+<!-- Project 1 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://readdy.ai/api/search-image?query=modern%20luxury%20villa%20with%20garden%20in%20Kerala%2C%20architectural%20photography%2C%20professional%20real%20estate%2C%20high%20quality%2C%20clean%20composition&width=375&height=200&seq=2&orientation=landscape" alt="Luxury Villa Project" class="w-full h-48 object-cover">
+<div class="p-4">
+<h3 class="font-medium text-lg mb-1">Emerald Heights Villa</h3>
+<p class="text-sm text-gray-600 mb-2">Trivandrum, Kerala</p>
+<p class="text-xs text-gray-700">A premium 4-bedroom villa with contemporary design and sustainable features. Completed in 2024.</p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md">
+<img src="https://readdy.ai/api/search-image?query=modern%20apartment%20complex%20in%20Kerala%20with%20greenery%2C%20architectural%20photography%2C%20professional%20real%20estate%2C%20high%20quality%2C%20clean%20composition&width=375&height=200&seq=3&orientation=landscape" alt="Apartment Complex" class="w-full h-48 object-cover">
+<div class="p-4">
+<h3 class="font-medium text-lg mb-1">Terra Horizon Apartments</h3>
+<p class="text-sm text-gray-600 mb-2">Kochi, Kerala</p>
+<p class="text-xs text-gray-700">Luxury apartment complex with 32 units featuring smart home technology and panoramic views.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="px-6 py-8">
+<h2 class="text-2xl font-semibold text-gray-800 mb-4">Client Testimonials</h2>
+<div class="w-16 h-1 bg-primary mb-6"></div>
+<div class="space-y-4">
+<!-- Testimonial 1 -->
+<div class="bg-white p-5 rounded-lg shadow-md border-l-4 border-primary">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full">
+<i class="ri-user-line ri-lg text-primary"></i>
+</div>
+<div class="ml-3">
+<h4 class="font-medium text-sm">Rajesh Menon</h4>
+<p class="text-xs text-gray-600">Homeowner, Trivandrum</p>
+</div>
+</div>
+<p class="text-sm text-gray-700">
+"Terra Bhoomi transformed our vision into reality. Their attention to detail and commitment to quality made our dream home possible. Highly recommended!"
+</p>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white p-5 rounded-lg shadow-md border-l-4 border-primary">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full">
+<i class="ri-user-line ri-lg text-primary"></i>
+</div>
+<div class="ml-3">
+<h4 class="font-medium text-sm">Priya Nair</h4>
+<p class="text-xs text-gray-600">Property Investor, Kochi</p>
+</div>
+</div>
+<p class="text-sm text-gray-700">
+"Working with Terra Bhoomi on our commercial project was seamless. Their market insights and professional approach helped us maximize our investment."
+</p>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-6 py-8 bg-gray-50">
+<h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
+<div class="w-16 h-1 bg-primary mb-6"></div>
+<form class="mb-6">
+<div class="mb-4">
+<label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+<input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your name">
+</div>
+<div class="mb-4">
+<label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+<input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your email">
+</div>
+<div class="mb-4">
+<label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+<input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your phone number">
+</div>
+<div class="mb-4">
+<label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+<textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="How can we help you?"></textarea>
+</div>
+<button type="submit" class="bg-primary text-white px-6 py-3 rounded-button font-medium w-full cursor-pointer !rounded-button">
+Send Message
+</button>
+</form>
+<div class="flex justify-center space-x-4">
+<a href="https://wa.me/919745399831" target="_blank" class="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-white cursor-pointer hover:bg-opacity-90 transition-all">
+<i class="ri-whatsapp-line ri-lg"></i>
+</a>
+<a href="https://www.instagram.com/terrabhoomi?igsh=MXZmcDk5YWFsdXFjOA==" target="_blank" class="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-white cursor-pointer hover:bg-opacity-90 transition-all">
+<i class="ri-instagram-line ri-lg"></i>
+</a>
+<a href="https://www.facebook.com/share/15YQQZeNzF/?mibextid=wwXIfr" target="_blank" class="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-white cursor-pointer hover:bg-opacity-90 transition-all">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+</div>
+</section>
+</main>
+<!-- Tab Bar -->
+<div class="tab-bar bg-white shadow-lg border-t border-gray-200">
+<div class="grid grid-cols-4 h-16">
+<a href="#" class="flex flex-col items-center justify-center cursor-pointer">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-home-5-line ri-lg text-primary"></i>
+</div>
+<span class="text-xs mt-1 text-primary">Home</span>
+</a>
+<a href="#" class="flex flex-col items-center justify-center cursor-pointer">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-building-line ri-lg text-gray-500"></i>
+</div>
+<span class="text-xs mt-1 text-gray-500">Projects</span>
+</a>
+<a href="#" class="flex flex-col items-center justify-center cursor-pointer">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-customer-service-2-line ri-lg text-gray-500"></i>
+</div>
+<span class="text-xs mt-1 text-gray-500">Services</span>
+</a>
+<a href="#" class="flex flex-col items-center justify-center cursor-pointer">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-contacts-line ri-lg text-gray-500"></i>
+</div>
+<span class="text-xs mt-1 text-gray-500">Contact</span>
+</a>
+</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 70,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+document.addEventListener('DOMContentLoaded', function() {
+// Form submission
+const contactForm = document.querySelector('form');
+if (contactForm) {
+contactForm.addEventListener('submit', function(e) {
+e.preventDefault();
+// Here you would typically send the form data to a server
+// For now, we'll just show a success message
+const formElements = contactForm.elements;
+let isValid = true;
+for (let i = 0; i < formElements.length; i++) {
+if (formElements[i].type !== 'submit' && formElements[i].value.trim() === '') {
+isValid = false;
+formElements[i].classList.add('border-red-500');
+} else if (formElements[i].type !== 'submit') {
+formElements[i].classList.remove('border-red-500');
+}
+}
+if (isValid) {
+// Create success message
+const successMessage = document.createElement('div');
+successMessage.className = 'bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4';
+successMessage.innerHTML = '<strong class="font-bold">Success!</strong><span class="block sm:inline"> Your message has been sent. We\'ll get back to you soon.</span>';
+// Insert before the form
+contactForm.parentNode.insertBefore(successMessage, contactForm);
+// Reset the form
+contactForm.reset();
+// Remove the message after 5 seconds
+setTimeout(() => {
+successMessage.remove();
+}, 5000);
+}
+});
+}
+});
+</script>
+</body>
 </html>
